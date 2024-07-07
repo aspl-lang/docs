@@ -15,6 +15,7 @@ Note that this repository does not contain any documentation of general language
 * [console](console.md)
 * [encoding](encoding.md)
 * [graphics](graphics.md)
+* [gui](gui.md)
 * [internet](internet.md)
 * [io](io.md)
 * [json](json.md)
