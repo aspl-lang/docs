@@ -193,68 +193,73 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:69:5
 ```aspl
 property list<string> customConditionalCompilationSymbols
 ```
-### <sub>property</sub> backend
+### <sub>property</sub> showTimings
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:73:5
+```aspl
+property bool showTimings
+```
+### <sub>property</sub> backend
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:77:5
 ```aspl
 property string backend
 ```
 ### <sub>property</sub> _cCompiler
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:77:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:81:5
 ```aspl
 property string? _cCompiler
 ```
 ### <sub>property</sub> cCompiler
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:80:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:84:5
 ```aspl
 property string cCompiler
 ```
 ### <sub>property</sub> useDynamicCTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:104:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:108:5
 ```aspl
 property bool useDynamicCTemplate
 ```
 ### <sub>property</sub> showCCommand
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:108:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:112:5
 ```aspl
 property bool showCCommand
 ```
 ### <sub>property</sub> heapBased
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:112:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:116:5
 ```aspl
 property bool heapBased
 ```
 ### <sub>property</sub> stackSize
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:116:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:120:5
 ```aspl
 property int? stackSize
 ```
 ### <sub>property</sub> useSsl
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:120:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:124:5
 ```aspl
 property bool useSsl
 ```
 ### <sub>property</sub> enableErrorHandling
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:124:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:128:5
 ```aspl
 property bool enableErrorHandling
 ```
 ### <sub>property</sub> noCachedTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:128:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:132:5
 ```aspl
 property bool noCachedTemplate
 ```
 ### <sub>property</sub> internalTemplateType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:132:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:136:5
 ```aspl
 property string internalTemplateType
 ```
 ### <sub>property</sub> internalDoNotBundle
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:136:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:140:5
 ```aspl
 property bool internalDoNotBundle
 ```
 ### <sub>method</sub> getConditionCompilationSymbols
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:140:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:144:5
 ```aspl
 method getConditionCompilationSymbols() returns list<string>
 ```
@@ -345,50 +350,20 @@ method construct(list<Node> nodes)
 
 ## <sub>class</sub> aspl.parser.Timings
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:5:1
-### <sub>property</sub> total
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:33:5
+### <sub>property</sub> totalDuration
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:18:5
 ```aspl
-property long total
+property long totalDuration
 ```
-### <sub>method</sub> startLexer
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:41:5
+### <sub>method</sub> startPass
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:29:5
 ```aspl
-method startLexer()
+method startPass(string name)
 ```
-### <sub>method</sub> stopLexer
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:47:5
+### <sub>method</sub> show
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:39:5
 ```aspl
-method stopLexer()
-```
-### <sub>method</sub> startPreprocessorTypes
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:54:5
-```aspl
-method startPreprocessorTypes()
-```
-### <sub>method</sub> stopPreprocessorTypes
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:60:5
-```aspl
-method stopPreprocessorTypes()
-```
-### <sub>method</sub> startPreprocessor
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:67:5
-```aspl
-method startPreprocessor()
-```
-### <sub>method</sub> stopPreprocessor
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:73:5
-```aspl
-method stopPreprocessor()
-```
-### <sub>method</sub> startParser
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:80:5
-```aspl
-method startParser()
-```
-### <sub>method</sub> stopParser
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Timings.aspl:86:5
-```aspl
-method stopParser()
+method show()
 ```
 
 ## <sub>class</sub> aspl.parser.ast.Node
@@ -2303,7 +2278,7 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/ParseMode.aspl:2:1
 ```
 
 ## <sub>function</sub> aspl.compiler.compile
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/main.aspl:37:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/main.aspl:36:1
 ```aspl
 function compile(string main) returns CompilationResult
 ```
@@ -2333,7 +2308,7 @@ function parse() returns ParserResult
 ```
 
 ## <sub>function</sub> aspl.parser.sort
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/main.aspl:104:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/main.aspl:105:1
 ```aspl
 function sort(list<Node> nodes) returns list<Node>
 ```
