@@ -12,13 +12,13 @@ function is_digit(string s) returns bool
 ```
 
 ## <sub>function</sub> json.decode_token
-Source: /home/runner/work/aspl/aspl/stdlib/json/decoder.aspl:112:1
+Source: /home/runner/work/aspl/aspl/stdlib/json/decoder.aspl:124:1
 ```aspl
 function decode_token(TokenList tokens) returns any
 ```
 
 ## <sub>function</sub> json.decode
-Source: /home/runner/work/aspl/aspl/stdlib/json/decoder.aspl:166:1
+Source: /home/runner/work/aspl/aspl/stdlib/json/decoder.aspl:178:1
 ```aspl
 function decode(string data) returns any
 ```
