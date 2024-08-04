@@ -1657,10 +1657,10 @@ method createMethodFromAny(Type type, string name) returns Method
 
 ## <sub>class</sub> aspl.parser.precedence.PrecedenceUtils
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/precedence/PrecedenceUtils.aspl:5:1
-### <sub>method</sub> GetTokenPrecendenceLevel
+### <sub>method</sub> getTokenPrecendenceLevel
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/precedence/PrecedenceUtils.aspl:9:5
 ```aspl
-method GetTokenPrecendenceLevel(Token token) returns PrecedenceLevel
+method getTokenPrecendenceLevel(Token token) returns PrecedenceLevel
 ```
 
 ## <sub>class</sub> aspl.parser.properties.CustomNormalProperty
