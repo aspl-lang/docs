@@ -23,6 +23,7 @@ Note that this repository does not contain any documentation of general language
 * [os](os.md)
 * [rand](rand.md)
 * [regex](regex.md)
+* [sqlite](sqlite.md)
 * [strings](strings.md)
 * [time](time.md)
 * [zip](zip.md)
