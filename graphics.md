@@ -648,27 +648,32 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:57:2
 property callback<list<TouchPoint>> onTouchUp
 ```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:62:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:60:2
 ```aspl
 method construct(string|int title, int width, int? height = null)
 ```
 ### <sub>method</sub> show
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:142:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:134:2
 ```aspl
 method show()
 ```
 ### <sub>method</sub> isFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:147:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:139:2
 ```aspl
 method isFullscreen() returns bool
 ```
 ### <sub>method</sub> toggleFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:152:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:144:2
 ```aspl
 method toggleFullscreen()
 ```
+### <sub>method</sub> isMouseButtonDown
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:149:5
+```aspl
+method isMouseButtonDown(MouseButton button) returns bool
+```
 ### <sub>method</sub> isKeyDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:157:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:154:2
 ```aspl
 method isKeyDown(KeyCode key) returns bool
 ```
