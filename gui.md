@@ -79,12 +79,12 @@ method onMouseUpAny(Point position, MouseButton button) returns bool
 ### <sub>method</sub> onMouseMove
 Source: /home/runner/work/aspl/aspl/stdlib/gui/Control.aspl:61:2
 ```aspl
-method onMouseMove(Point from, float deltaX, float deltaY)
+method onMouseMove(Point end, float deltaX, float deltaY)
 ```
 ### <sub>method</sub> onMouseMoveAny
 Source: /home/runner/work/aspl/aspl/stdlib/gui/Control.aspl:63:2
 ```aspl
-method onMouseMoveAny(Point from, float deltaX, float deltaY) returns bool
+method onMouseMoveAny(Point end, float deltaX, float deltaY) returns bool
 ```
 ### <sub>method</sub> onMouseWheel
 Source: /home/runner/work/aspl/aspl/stdlib/gui/Control.aspl:67:2

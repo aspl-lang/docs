@@ -1623,34 +1623,34 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:63:5
 method init()
 ```
 ### <sub>method</sub> register
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:100:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:99:5
 ```aspl
 method register(Location? location)
 ```
 ### <sub>method</sub> exists
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:116:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:115:5
 ```aspl
 method exists(Type type, string name, bool checkParents = true) returns bool
 ```
 ### <sub>method</sub> get
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:139:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:138:5
 ```aspl
 method get(Type type, string name) returns Method
 ```
 ### <sub>method</sub> getAllFor
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:162:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:161:5
 ```aspl
 method getAllFor(Type type) returns list<Method>
 ```
 ### <sub>method</sub> withType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:194:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:193:5
 ```aspl
 method withType(Type type) returns Method
 
     metho
 ```
 ### <sub>method</sub> createMethodFromAny
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:202:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:201:5
 ```aspl
 method createMethodFromAny(Type type, string name) returns Method
 ```
