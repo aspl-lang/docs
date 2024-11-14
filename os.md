@@ -82,6 +82,15 @@ function chmod(string path, int mode)
 > chmod changes the mode of the specified file to the specified mode
 
 
+## <sub>function</sub> os.create_temp_dir
+Source: /home/runner/work/aspl/aspl/stdlib/os/fs.aspl:21:1
+```aspl
+function create_temp_dir() returns string
+```
+
+> create_temp_dir creates and returns a unique ephemeral directory suitable for storing temporary files
+
+
 ## <sub>function</sub> os.user_os
 Source: /home/runner/work/aspl/aspl/stdlib/os/os.aspl:3:1
 ```aspl

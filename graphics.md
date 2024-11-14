@@ -122,6 +122,11 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:150:2
 ```aspl
 method fromFileData(list<byte> bytes) returns Canvas
 ```
+### <sub>method</sub> fromData
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:157:2
+```aspl
+method fromData(list<byte> bytes, int width, int height, int channels) returns Canvas
+```
 
 ## <sub>class</sub> graphics.Color
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/Color.aspl:4:1
@@ -709,13 +714,13 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/VerticalAlignment.aspl:2:1
 ```
 
 ## <sub>function</sub> graphics.get_image_width_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:158:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:165:1
 ```aspl
 function get_image_width_from_file(string file) returns int
 ```
 
 ## <sub>function</sub> graphics.get_image_height_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:163:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:170:1
 ```aspl
 function get_image_height_from_file(string file) returns int
 ```
