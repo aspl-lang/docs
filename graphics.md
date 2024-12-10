@@ -50,27 +50,27 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:62:2
 method fillRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:66:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:67:2
 ```aspl
 method drawCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> fillCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:71:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:72:2
 ```aspl
 method fillCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawText
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:76:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:77:2
 ```aspl
 method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:81:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:82:2
 ```aspl
 method replaceColor(Color from, Color to, bool blend = true)
 ```
 ### <sub>method</sub> replaceColorIgnoreAlpha
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:87:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:88:2
 
 > replaceColorIgnoreAlpha works like replaceColor, but checks only the R, G and B components and leaves the alpha value unchanged
 
@@ -78,52 +78,52 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:87:2
 method replaceColorIgnoreAlpha(Color from, Color to)
 ```
 ### <sub>method</sub> blur
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:92:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:93:2
 ```aspl
 method blur(int radius)
 ```
 ### <sub>method</sub> resize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:97:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:98:2
 ```aspl
 method resize(int width, int height)
 ```
 ### <sub>method</sub> resizeScale
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:107:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:108:2
 ```aspl
 method resizeScale(float scale)
 ```
 ### <sub>method</sub> extendTo
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:117:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:118:2
 ```aspl
 method extendTo(int width, int height)
 ```
 ### <sub>method</sub> getSubImage
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:127:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:128:2
 ```aspl
 method getSubImage(int x, int y, int width, int height) returns Canvas
 ```
 ### <sub>method</sub> copy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:132:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:133:2
 ```aspl
 method copy() returns Canvas
 ```
 ### <sub>method</sub> save
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:137:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:138:2
 ```aspl
 method save(string path)
 ```
 ### <sub>method</sub> fromFile
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:143:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:144:2
 ```aspl
 method fromFile(string file) returns Canvas
 ```
 ### <sub>method</sub> fromFileData
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:150:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:151:2
 ```aspl
 method fromFileData(list<byte> bytes) returns Canvas
 ```
 ### <sub>method</sub> fromData
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:157:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:158:2
 ```aspl
 method fromData(list<byte> bytes, int width, int height, int channels) returns Canvas
 ```
@@ -714,13 +714,13 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/VerticalAlignment.aspl:2:1
 ```
 
 ## <sub>function</sub> graphics.get_image_width_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:165:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:166:1
 ```aspl
 function get_image_width_from_file(string file) returns int
 ```
 
 ## <sub>function</sub> graphics.get_image_height_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:170:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:171:1
 ```aspl
 function get_image_height_from_file(string file) returns int
 ```
