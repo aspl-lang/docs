@@ -7,6 +7,39 @@ Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponse.aspl:16:5
 method construct(string text, map<string, list<string>> headers, int statusCode, string statusMessage, string httpVersion)
 ```
 
+## <sub>class</sub> internet.TcpSocketClient
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:2:1
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:7:2
+```aspl
+method construct(string address, int? port = null, bool tls = false)
+```
+### <sub>method</sub> connect
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:26:5
+```aspl
+method connect()
+```
+### <sub>method</sub> read
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:31:2
+```aspl
+method read(int length) returns string?
+```
+### <sub>method</sub> readTo
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:41:2
+```aspl
+method readTo(string delimiter) returns string?
+```
+### <sub>method</sub> send
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:60:5
+```aspl
+method send(string content) returns int
+```
+### <sub>method</sub> disconnect
+Source: /home/runner/work/aspl/aspl/stdlib/internet/TcpSocketClient.aspl:65:5
+```aspl
+method disconnect()
+```
+
 ## <sub>class</sub> internet.WebSocketClient
 Source: /home/runner/work/aspl/aspl/stdlib/internet/WebSocketClient.aspl:2:1
 ### <sub>property</sub> onConnect
