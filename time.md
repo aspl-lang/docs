@@ -47,13 +47,18 @@ function nanosleep(long nanoseconds)
 ```
 
 ## <sub>function</sub> time.now
-Source: /home/runner/work/aspl/aspl/stdlib/time/time.aspl:5:1
+Source: /home/runner/work/aspl/aspl/stdlib/time/time.aspl:3:1
 ```aspl
 function now() returns Timestamp
 ```
 
+> now returns the current time since the Unix Epoch (UTC)
+
+
 ## <sub>function</sub> time.local
-Source: /home/runner/work/aspl/aspl/stdlib/time/time.aspl:13:1
+Source: /home/runner/work/aspl/aspl/stdlib/time/time.aspl:9:1
 ```aspl
 function local() returns Timestamp
 ```
+
+> local returns the current time since the Unix Epoch (local timezone)
