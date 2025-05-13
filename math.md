@@ -71,6 +71,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/math/comparison.aspl:10:1
 function max(double a, double b) returns double
 ```
 
+## <sub>function</sub> math.clamp
+Source: /home/runner/work/aspl/aspl/stdlib/math/comparison.aspl:18:1
+```aspl
+function clamp(double value, double min, double max) returns double
+```
+
 ## <sub>function</sub> math.pi
 Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:2:1
 ```aspl
