@@ -4,7 +4,25 @@ Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponse.aspl:2:1
 ### <sub>method</sub> construct
 Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponse.aspl:16:5
 ```aspl
-method construct(string text, map<string, list<string>> headers, int statusCode, string statusMessage, string httpVersion)
+method construct(HttpResponseData data, map<string, list<string>> headers, int statusCode, string statusMessage, string httpVersion)
+```
+
+## <sub>class</sub> internet.HttpResponseData
+Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponseData.aspl:2:1
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponseData.aspl:7:5
+```aspl
+method construct(any handle)
+```
+### <sub>method</sub> fetchAsString
+Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponseData.aspl:12:5
+```aspl
+method fetchAsString() returns string
+```
+### <sub>method</sub> fetchAsBytes
+Source: /home/runner/work/aspl/aspl/stdlib/internet/HttpResponseData.aspl:17:5
+```aspl
+method fetchAsBytes() returns list<byte>
 ```
 
 ## <sub>class</sub> internet.TcpSocketClient
