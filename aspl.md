@@ -238,28 +238,33 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:124:5
 ```aspl
 property bool useSsl
 ```
-### <sub>property</sub> enableErrorHandling
+### <sub>property</sub> useD3D11
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:128:5
+```aspl
+property bool useD3D11
+```
+### <sub>property</sub> enableErrorHandling
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:132:5
 ```aspl
 property bool enableErrorHandling
 ```
 ### <sub>property</sub> noCachedTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:132:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:136:5
 ```aspl
 property bool noCachedTemplate
 ```
 ### <sub>property</sub> internalTemplateType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:136:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:140:5
 ```aspl
 property string internalTemplateType
 ```
 ### <sub>property</sub> internalDoNotBundle
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:140:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:144:5
 ```aspl
 property bool internalDoNotBundle
 ```
 ### <sub>method</sub> getConditionCompilationSymbols
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:144:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:148:5
 ```aspl
 method getConditionCompilationSymbols() returns list<string>
 ```
