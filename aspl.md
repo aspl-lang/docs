@@ -335,12 +335,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:623:2
 method parseToken(Token token, TokenList tokens, bool standalone = false, PrecedenceLevel precedenceLevel = PrecedenceLevel.None, Expression? previousExpression = null, Types? expectedTypes = null) returns Node
 ```
 ### <sub>method</sub> peekTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3080:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3158:2
 ```aspl
 method peekTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
 ### <sub>method</sub> parseTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3157:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3235:2
 ```aspl
 method parseTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
