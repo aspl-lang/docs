@@ -89,6 +89,84 @@ Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:7:1
 function e() returns double
 ```
 
+## <sub>function</sub> math.ln_2
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:12:1
+```aspl
+function ln_2() returns double
+```
+
+## <sub>function</sub> math.ln_10
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:17:1
+```aspl
+function ln_10() returns double
+```
+
+## <sub>function</sub> math.golden_ratio
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:22:1
+```aspl
+function golden_ratio() returns double
+```
+
+## <sub>function</sub> math.root_2
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:27:1
+```aspl
+function root_2() returns double
+```
+
+## <sub>function</sub> math.root_3
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:32:1
+```aspl
+function root_3() returns double
+```
+
+## <sub>function</sub> math.root_5
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:37:1
+```aspl
+function root_5() returns double
+```
+
+## <sub>function</sub> math.euler_mascheroni
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:42:1
+```aspl
+function euler_mascheroni() returns double
+```
+
+## <sub>function</sub> math.apery_constant
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:47:1
+```aspl
+function apery_constant() returns double
+```
+
+## <sub>function</sub> math.feigenbaum_alpha
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:52:1
+```aspl
+function feigenbaum_alpha() returns double
+```
+
+## <sub>function</sub> math.feigenbaum_delta
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:57:1
+```aspl
+function feigenbaum_delta() returns double
+```
+
+## <sub>function</sub> math.catalan_constant
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:62:1
+```aspl
+function catalan_constant() returns double
+```
+
+## <sub>function</sub> math.khinchin_constant
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:67:1
+```aspl
+function khinchin_constant() returns double
+```
+
+## <sub>function</sub> math.glaisher_kinkelin
+Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:72:1
+```aspl
+function glaisher_kinkelin() returns double
+```
+
 ## <sub>function</sub> math.pow
 Source: /home/runner/work/aspl/aspl/stdlib/math/pow.aspl:2:1
 ```aspl
