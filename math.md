@@ -125,10 +125,10 @@ Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:37:1
 function root_5() returns double
 ```
 
-## <sub>function</sub> math.euler_mascheroni
+## <sub>function</sub> math.euler_mascheroni_constant
 Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:42:1
 ```aspl
-function euler_mascheroni() returns double
+function euler_mascheroni_constant() returns double
 ```
 
 ## <sub>function</sub> math.apery_constant
@@ -137,16 +137,16 @@ Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:47:1
 function apery_constant() returns double
 ```
 
-## <sub>function</sub> math.feigenbaum_alpha
+## <sub>function</sub> math.feigenbaum_alpha_constant
 Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:52:1
 ```aspl
-function feigenbaum_alpha() returns double
+function feigenbaum_alpha_constant() returns double
 ```
 
-## <sub>function</sub> math.feigenbaum_delta
+## <sub>function</sub> math.feigenbaum_delta_constant
 Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:57:1
 ```aspl
-function feigenbaum_delta() returns double
+function feigenbaum_delta_constant() returns double
 ```
 
 ## <sub>function</sub> math.catalan_constant
@@ -161,10 +161,10 @@ Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:67:1
 function khinchin_constant() returns double
 ```
 
-## <sub>function</sub> math.glaisher_kinkelin
+## <sub>function</sub> math.glaisher_kinkelin_constant
 Source: /home/runner/work/aspl/aspl/stdlib/math/constants.aspl:72:1
 ```aspl
-function glaisher_kinkelin() returns double
+function glaisher_kinkelin_constant() returns double
 ```
 
 ## <sub>function</sub> math.pow
