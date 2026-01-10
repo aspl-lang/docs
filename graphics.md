@@ -662,23 +662,39 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:134:2
 ```aspl
 method show()
 ```
+### <sub>method</sub> isRetainMode
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:140:2
+
+> isRetainMode returns if this window is in "canvas retain mode", i.e. it preserves drawings between frames
+
+```aspl
+method isRetainMode() returns bool
+```
+### <sub>method</sub> setRetainMode
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:146:2
+
+> setRetainMode enables/disables "canvas retain mode" for this window, i.e. preservation of drawings between frames
+
+```aspl
+method setRetainMode(bool value = true)
+```
 ### <sub>method</sub> isFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:139:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:151:2
 ```aspl
 method isFullscreen() returns bool
 ```
 ### <sub>method</sub> toggleFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:144:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:156:2
 ```aspl
 method toggleFullscreen()
 ```
 ### <sub>method</sub> isMouseButtonDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:149:5
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:161:5
 ```aspl
 method isMouseButtonDown(MouseButton button) returns bool
 ```
 ### <sub>method</sub> isKeyDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:154:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:166:2
 ```aspl
 method isKeyDown(KeyCode key) returns bool
 ```
