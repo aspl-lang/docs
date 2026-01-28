@@ -129,29 +129,29 @@ property list<string> libraries
 ```
 
 ## <sub>class</sub> aspl.parser.Module
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:2:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:4:1
 ### <sub>property</sub> modules
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:7:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:9:5
 ```aspl
 property map<string, Module> modules
 ```
 ### <sub>property</sub> mainModule
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:11:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:13:5
 ```aspl
 property Module mainModule
 ```
 ### <sub>property</sub> id
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:28:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:30:5
 ```aspl
 property string id
 ```
 ### <sub>method</sub> init
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:19:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:21:5
 ```aspl
 method init(Module mainModule)
 ```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:37:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Module.aspl:41:5
 ```aspl
 method construct(string name, string directory)
 ```
@@ -1555,8 +1555,13 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/StringToken.aspl:4:
 
 ## <sub>class</sub> aspl.parser.lexer.Token
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/Token.aspl:4:1
+### <sub>property</sub> patterns
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/Token.aspl:11:2
+```aspl
+property map<TokenType, TokenPattern> patterns
+```
 ### <sub>property</sub> comments
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/Token.aspl:67:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/Token.aspl:73:2
 ```aspl
 property list<Token>? comments
 ```
@@ -2266,6 +2271,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/backend/bytecode/IntTyp
 
 ## <sub>enum</sub> aspl.parser.attributes.AttributeUsage
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/AttributeUsage.aspl:3:1
+```aspl
+
+```
+
+## <sub>enum</sub> aspl.parser.lexer.TokenType
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/lexer/TokenType.aspl:2:1
 ```aspl
 
 ```
