@@ -108,16 +108,16 @@ method typeToCIdentifier(string type) returns string
 ```
 
 ## <sub>class</sub> aspl.compiler.utils.IncludeUtils
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:3:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:5:1
 ### <sub>property</sub> files
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:8:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:10:5
 ```aspl
-property list<string> files
+property map<string, IncludePhase> files
 ```
 ### <sub>method</sub> include
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:12:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/utils/IncludeUtils.aspl:14:5
 ```aspl
-method include(string file)
+method include(string file, IncludePhase phase)
 ```
 
 ## <sub>class</sub> aspl.compiler.utils.LinkUtils
@@ -335,12 +335,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:623:2
 method parseToken(Token token, TokenList tokens, bool standalone = false, PrecedenceLevel precedenceLevel = PrecedenceLevel.None, Expression? previousExpression = null, Types? expectedTypes = null) returns Node
 ```
 ### <sub>method</sub> peekTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3158:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3177:2
 ```aspl
 method peekTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
 ### <sub>method</sub> parseTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3235:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3254:2
 ```aspl
 method parseTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
@@ -2287,6 +2287,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/precedence/PrecedenceLeve
 
 ```
 
+## <sub>enum</sub> aspl.parser.utils.IncludePhase
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/IncludePhase.aspl:2:1
+```aspl
+
+```
+
 ## <sub>enum</sub> aspl.parser.utils.ParseMode
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/ParseMode.aspl:2:1
 ```aspl
@@ -2294,7 +2300,7 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/ParseMode.aspl:2:1
 ```
 
 ## <sub>function</sub> aspl.compiler.compile
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/main.aspl:36:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/compiler/main.aspl:37:1
 ```aspl
 function compile(string main) returns CompilationResult
 ```
