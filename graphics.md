@@ -562,12 +562,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:158:2
 method fromData(list<byte> bytes, int width, int height, int channels) returns RegularCanvas
 ```
 
-## <sub>class</sub> graphics.TouchPoint
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/TouchPoint.aspl:4:1
+## <sub>class</sub> graphics.TouchPointer
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/TouchPointer.aspl:4:1
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/TouchPoint.aspl:16:5
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/TouchPointer.aspl:16:5
 ```aspl
-method construct(long identifier, Point position, TouchToolType toolType, bool changed)
+method construct(long identifier, Point position, TouchToolType toolType, float pressure)
 ```
 
 ## <sub>class</sub> graphics.Window
@@ -583,87 +583,92 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:24:2
 property int fps
 ```
 ### <sub>property</sub> onLoad
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:31:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:34:2
 ```aspl
 property callback onLoad
 ```
 ### <sub>property</sub> onPaint
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:33:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:36:2
 ```aspl
 property callback<Canvas> onPaint
 ```
 ### <sub>property</sub> onResize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:35:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:38:2
 ```aspl
 property callback<int, int> onResize
 ```
 ### <sub>property</sub> onKeyPress
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:37:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:40:2
 ```aspl
 property callback<KeyCode> onKeyPress
 ```
 ### <sub>property</sub> onKeyDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:39:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:42:2
 ```aspl
 property callback<KeyCode> onKeyDown
 ```
 ### <sub>property</sub> onKeyUp
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:41:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:44:2
 ```aspl
 property callback<KeyCode> onKeyUp
 ```
 ### <sub>property</sub> onMouseClick
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:43:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:46:2
 ```aspl
 property callback<Point, MouseButton> onMouseClick
 ```
 ### <sub>property</sub> onMouseDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:45:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:48:2
 ```aspl
 property callback<Point, MouseButton> onMouseDown
 ```
 ### <sub>property</sub> onMouseUp
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:47:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:50:2
 ```aspl
 property callback<Point, MouseButton> onMouseUp
 ```
 ### <sub>property</sub> onMouseMove
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:49:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:52:2
 ```aspl
 property callback<Point, float, float> onMouseMove
 ```
 ### <sub>property</sub> onMouseWheel
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:51:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:54:2
 ```aspl
 property callback<Point, float, float> onMouseWheel
 ```
 ### <sub>property</sub> onTouchDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:53:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:56:2
 ```aspl
-property callback<list<TouchPoint>> onTouchDown
+property callback<TouchPointer> onTouchDown
 ```
 ### <sub>property</sub> onTouchMove
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:55:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:58:2
 ```aspl
-property callback<list<TouchPoint>> onTouchMove
+property callback<TouchPointer, float, float> onTouchMove
 ```
 ### <sub>property</sub> onTouchUp
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:57:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:60:2
 ```aspl
-property callback<list<TouchPoint>> onTouchUp
+property callback<TouchPointer> onTouchUp
+```
+### <sub>property</sub> onTouchCancel
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:62:2
+```aspl
+property callback<TouchPointer> onTouchCancel
 ```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:60:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:65:2
 ```aspl
 method construct(string|int title, int width, int? height = null)
 ```
 ### <sub>method</sub> show
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:134:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:186:2
 ```aspl
 method show()
 ```
 ### <sub>method</sub> isRetainMode
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:140:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:192:2
 
 > isRetainMode returns if this window is in "canvas retain mode", i.e. it preserves drawings between frames
 
@@ -671,7 +676,7 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:140:2
 method isRetainMode() returns bool
 ```
 ### <sub>method</sub> setRetainMode
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:146:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:198:2
 
 > setRetainMode enables/disables "canvas retain mode" for this window, i.e. preservation of drawings between frames
 
@@ -679,22 +684,22 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:146:2
 method setRetainMode(bool value = true)
 ```
 ### <sub>method</sub> isFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:151:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:203:2
 ```aspl
 method isFullscreen() returns bool
 ```
 ### <sub>method</sub> toggleFullscreen
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:156:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:208:2
 ```aspl
 method toggleFullscreen()
 ```
 ### <sub>method</sub> isMouseButtonDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:161:5
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:213:5
 ```aspl
 method isMouseButtonDown(MouseButton button) returns bool
 ```
 ### <sub>method</sub> isKeyDown
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:166:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Window.aspl:218:2
 ```aspl
 method isKeyDown(KeyCode key) returns bool
 ```
