@@ -330,19 +330,24 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:102:2
 method parse(ParseMode parseMode = ParseMode.Normal) returns ParseFileResult
 ```
 ### <sub>method</sub> parseToken
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:623:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:530:2
 ```aspl
 method parseToken(Token token, TokenList tokens, bool standalone = false, PrecedenceLevel precedenceLevel = PrecedenceLevel.None, Expression? previousExpression = null, Types? expectedTypes = null) returns Node
 ```
 ### <sub>method</sub> peekTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3177:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2814:2
 ```aspl
 method peekTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
 ### <sub>method</sub> parseTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3254:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2891:2
 ```aspl
 method parseTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
+```
+### <sub>method</sub> parseArguments
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3124:2
+```aspl
+method parseArguments(string kind, string identifier, list<Parameter> parameters, TokenList tokens) returns map<string, Expression>
 ```
 
 ## <sub>class</sub> aspl.parser.ParserResult
@@ -459,7 +464,7 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/expressions/ClassInst
 ### <sub>method</sub> construct
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/expressions/ClassInstantiateExpression.aspl:14:5
 ```aspl
-method construct(Class c, list<Expression> arguments, Location? location)
+method construct(Class c, map<string, Expression> arguments, Location? location)
 ```
 ### <sub>method</sub> getType
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/expressions/ClassInstantiateExpression.aspl:21:5
@@ -1331,38 +1336,33 @@ method construct(Expression condition, list<Node> code, Location? location)
 
 ## <sub>class</sub> aspl.parser.attributes.Attribute
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:5:1
-### <sub>property</sub> minimumParameterCount
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:15:5
-```aspl
-property int minimumParameterCount
-```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:33:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:20:5
 ```aspl
 method construct(string identifier, list<Parameter> parameters, AttributeUsage usage, list<string> conflicting)
 ```
 ### <sub>method</sub> canPair
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:41:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:28:5
 ```aspl
 method canPair(Attribute other) returns bool
 ```
 ### <sub>method</sub> init
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:47:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:34:5
 ```aspl
 method init()
 ```
 ### <sub>method</sub> register
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:62:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:49:5
 ```aspl
 method register(Attribute attribute)
 ```
 ### <sub>method</sub> exists
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:68:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:55:5
 ```aspl
 method exists(string identifier) returns bool
 ```
 ### <sub>method</sub> get
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:74:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/Attribute.aspl:61:5
 ```aspl
 method get(string identifier) returns Attribute
 ```
@@ -1372,7 +1372,7 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/AttributeInsta
 ### <sub>method</sub> construct
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/attributes/AttributeInstance.aspl:18:5
 ```aspl
-method construct(Attribute attribute, list<Expression> arguments, Location? location, list<Token> comments)
+method construct(Attribute attribute, map<string, Expression> arguments, Location? location, list<Token> comments)
 ```
 
 ## <sub>class</sub> aspl.parser.callbacks.Callback
@@ -1467,38 +1467,33 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:1
 ```aspl
 property list<Parameter> parameters
 ```
-### <sub>property</sub> minimumParameterCount
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:20:5
-```aspl
-property int minimumParameterCount
-```
 ### <sub>property</sub> returnTypes
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:33:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:20:5
 ```aspl
 property Types returnTypes
 ```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:46:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:33:5
 ```aspl
 method construct(string identifier, list<Parameter> parameters, Types returnTypes, list<AttributeInstance> attributes)
 ```
 ### <sub>method</sub> init
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:55:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:42:5
 ```aspl
 method init()
 ```
 ### <sub>method</sub> register
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:65:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:52:5
 ```aspl
 method register(Location? location)
 ```
 ### <sub>method</sub> exists
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:76:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:63:5
 ```aspl
 method exists(string identifier) returns bool
 ```
 ### <sub>method</sub> get
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:82:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/functions/Function.aspl:69:5
 ```aspl
 method get(string identifier) returns Function
 ```
@@ -1607,60 +1602,60 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:14:5
 ```aspl
 property map<string, map<string, Method>> methods
 ```
-### <sub>property</sub> parameters
+### <sub>property</sub> identifier
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:21:5
+```aspl
+property string identifier
+```
+### <sub>property</sub> parameters
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:31:5
 ```aspl
 property list<Parameter> parameters
 ```
-### <sub>property</sub> minimumParameterCount
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:23:5
-```aspl
-property int minimumParameterCount
-```
 ### <sub>property</sub> returnTypes
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:36:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:33:5
 ```aspl
 property Types returnTypes
 ```
 ### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:53:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:50:5
 ```aspl
 method construct(Type type, string name, list<Parameter> parameters, Types returnTypes, list<AttributeInstance> attributes)
 ```
 ### <sub>method</sub> init
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:63:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:60:5
 ```aspl
 method init()
 ```
 ### <sub>method</sub> register
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:99:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:96:5
 ```aspl
 method register(Location? location)
 ```
 ### <sub>method</sub> exists
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:115:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:112:5
 ```aspl
 method exists(Type type, string name, bool checkParents = true) returns bool
 ```
 ### <sub>method</sub> get
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:138:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:135:5
 ```aspl
 method get(Type type, string name) returns Method
 ```
 ### <sub>method</sub> getAllFor
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:161:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:158:5
 ```aspl
 method getAllFor(Type type) returns list<Method>
 ```
 ### <sub>method</sub> withType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:193:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:190:5
 ```aspl
 method withType(Type type) returns Method
 
     metho
 ```
 ### <sub>method</sub> createMethodFromAny
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:201:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/methods/Method.aspl:198:5
 ```aspl
 method createMethodFromAny(Type type, string name) returns Method
 ```
