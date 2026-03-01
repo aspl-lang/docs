@@ -49,7 +49,7 @@ method fillCircle(Ellipse circle, Color color, bool blend = true)
 ### <sub>method</sub> drawText
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:50:2
 ```aspl
-method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, bool blend = true)
+method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:54:2
@@ -140,35 +140,53 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:11:5
 ```aspl
 property Font default
 ```
-### <sub>method</sub> construct
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:40:2
+### <sub>method</sub> fromFile
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:52:5
 ```aspl
-method construct(string name, string path, string regularPath, int size, bool bold = false, bool italic = false, bool underline = false, bool strikeout = false)
+method fromFile(string path, string? regularPath = null, FontSize? size = null, bool bold = false, bool italic = false, bool underline = false, bool strikeout = false) returns Font
+```
+### <sub>method</sub> fromMemory
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:64:5
+```aspl
+method fromMemory(list<byte> data, FontSize? size = null, bool bold = false, bool italic = false, bool underline = false, bool strikeout = false) returns Font
 ```
 ### <sub>method</sub> withSize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:52:2
-```aspl
-method withSize(int size) returns Font
-```
-### <sub>method</sub> asBold
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:57:2
-```aspl
-method asBold(bool value = true) returns Font
-```
-### <sub>method</sub> asItalic
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:62:2
-```aspl
-method asItalic(bool value = true) returns Font
-```
-### <sub>method</sub> asUnderlined
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:67:2
-```aspl
-method asUnderlined(bool value = true) returns Font
-```
-### <sub>method</sub> asStrikedout
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:72:2
 ```aspl
-method asStrikedout(bool value = true) returns Font
+method withSize(FontSize size) returns Font
+```
+### <sub>method</sub> asBold
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:88:2
+```aspl
+method asBold(bool value = true) returns Font?
+```
+### <sub>method</sub> asItalic
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:93:2
+```aspl
+method asItalic(bool value = true) returns Font?
+```
+### <sub>method</sub> asUnderlined
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:98:2
+```aspl
+method asUnderlined(bool value = true) returns Font?
+```
+### <sub>method</sub> asStrikedout
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Font.aspl:103:2
+```aspl
+method asStrikedout(bool value = true) returns Font?
+```
+
+## <sub>class</sub> graphics.FontSize
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/FontSize.aspl:2:1
+### <sub>method</sub> px
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/FontSize.aspl:13:5
+```aspl
+method px(int px) returns FontSize
+```
+### <sub>method</sub> pt
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/FontSize.aspl:19:5
+```aspl
+method pt(int pt, int dpi = 96) returns FontSize
 ```
 
 ## <sub>class</sub> graphics.LazyChunkedCanvas
@@ -226,7 +244,7 @@ method fillCircle(Ellipse circle, Color color, bool blend = true)
 ### <sub>method</sub> drawText
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:81:2
 ```aspl
-method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, bool blend = true)
+method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:86:2
@@ -367,7 +385,7 @@ method fillCircle(Ellipse circle, Color color, bool blend = true)
 ### <sub>method</sub> drawText
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:78:2
 ```aspl
-method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, bool blend = true)
+method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:83:2
@@ -496,7 +514,7 @@ method fillCircle(Ellipse circle, Color color, bool blend = true)
 ### <sub>method</sub> drawText
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:77:2
 ```aspl
-method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, bool blend = true)
+method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:82:2
@@ -710,6 +728,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/HorizontalAlignment.aspl:2:1
 
 ```
 
+## <sub>enum</sub> graphics.HorizontalTextFitting
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/HorizontalTextFitting.aspl:2:1
+```aspl
+
+```
+
 ## <sub>enum</sub> graphics.KeyCode
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/KeyCode.aspl:2:1
 ```aspl
@@ -734,6 +758,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/VerticalAlignment.aspl:2:1
 
 ```
 
+## <sub>enum</sub> graphics.VerticalTextFitting
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/VerticalTextFitting.aspl:2:1
+```aspl
+
+```
+
 ## <sub>function</sub> graphics.get_image_width_from_file
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:166:1
 ```aspl
@@ -749,5 +779,5 @@ function get_image_height_from_file(string file) returns int
 ## <sub>function</sub> graphics.measure_text_size
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/text.aspl:4:1
 ```aspl
-function measure_text_size(string text, Font font) returns Size
+function measure_text_size(string text, Font font, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full) returns Size
 ```
