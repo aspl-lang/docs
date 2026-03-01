@@ -31,33 +31,43 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:34:2
 ```aspl
 method drawRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
-### <sub>method</sub> fillRectangle
+### <sub>method</sub> drawRoundedRectangle
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:38:2
+```aspl
+method drawRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
+### <sub>method</sub> fillRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:42:2
 ```aspl
 method fillRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
+### <sub>method</sub> fillRoundedRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:46:2
+```aspl
+method fillRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
 ### <sub>method</sub> drawCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:42:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:50:2
 ```aspl
 method drawCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> fillCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:46:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:54:2
 ```aspl
 method fillCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawText
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:50:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:58:2
 ```aspl
 method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:54:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:62:2
 ```aspl
 method replaceColor(Color from, Color to, bool blend = true)
 ```
 ### <sub>method</sub> replaceColorIgnoreAlpha
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:59:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:67:2
 
 > replaceColorIgnoreAlpha works like replaceColor, but checks only the R, G and B components and leaves the alpha value unchanged
 
@@ -65,37 +75,37 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:59:2
 method replaceColorIgnoreAlpha(Color from, Color to)
 ```
 ### <sub>method</sub> blur
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:63:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:71:2
 ```aspl
 method blur(int radius)
 ```
 ### <sub>method</sub> resize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:67:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:75:2
 ```aspl
 method resize(int width, int height)
 ```
 ### <sub>method</sub> resizeScale
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:71:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:79:2
 ```aspl
 method resizeScale(float scale)
 ```
 ### <sub>method</sub> extendTo
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:75:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:83:2
 ```aspl
 method extendTo(int width, int height)
 ```
 ### <sub>method</sub> getSubImage
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:79:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:87:2
 ```aspl
 method getSubImage(int x, int y, int width, int height) returns Canvas
 ```
 ### <sub>method</sub> copy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:83:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:91:2
 ```aspl
 method copy() returns Canvas
 ```
 ### <sub>method</sub> save
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:87:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/Canvas.aspl:95:2
 ```aspl
 method save(string path)
 ```
@@ -226,33 +236,43 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:61:2
 ```aspl
 method drawRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
-### <sub>method</sub> fillRectangle
+### <sub>method</sub> drawRoundedRectangle
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:66:2
+```aspl
+method drawRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
+### <sub>method</sub> fillRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:71:2
 ```aspl
 method fillRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
+### <sub>method</sub> fillRoundedRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:76:2
+```aspl
+method fillRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
 ### <sub>method</sub> drawCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:71:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:81:2
 ```aspl
 method drawCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> fillCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:76:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:86:2
 ```aspl
 method fillCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawText
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:81:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:91:2
 ```aspl
 method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:86:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:96:2
 ```aspl
 method replaceColor(Color from, Color to, bool blend = true)
 ```
 ### <sub>method</sub> replaceColorIgnoreAlpha
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:92:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:102:2
 
 > replaceColorIgnoreAlpha works like replaceColor, but checks only the R, G and B components and leaves the alpha value unchanged
 
@@ -260,62 +280,62 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:92:2
 method replaceColorIgnoreAlpha(Color from, Color to)
 ```
 ### <sub>method</sub> blur
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:97:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:107:2
 ```aspl
 method blur(int radius)
 ```
 ### <sub>method</sub> resize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:102:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:112:2
 ```aspl
 method resize(int width, int height)
 ```
 ### <sub>method</sub> resizeScale
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:109:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:119:2
 ```aspl
 method resizeScale(float scale)
 ```
 ### <sub>method</sub> extendTo
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:116:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:126:2
 ```aspl
 method extendTo(int width, int height)
 ```
 ### <sub>method</sub> getSubImage
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:123:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:133:2
 ```aspl
 method getSubImage(int x, int y, int width, int height) returns RegularCanvas
 ```
 ### <sub>method</sub> copy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:128:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:138:2
 ```aspl
 method copy() returns LazyChunkedCanvas
 ```
 ### <sub>method</sub> requireArea
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:133:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:143:2
 ```aspl
 method requireArea(int x, int y, int width, int height)
 ```
 ### <sub>method</sub> isChunkLoaded
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:138:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:148:2
 ```aspl
 method isChunkLoaded(int x, int y) returns bool
 ```
 ### <sub>method</sub> loadChunk
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:143:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:153:2
 ```aspl
 method loadChunk(int x, int y)
 ```
 ### <sub>method</sub> unloadChunk
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:148:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:158:2
 ```aspl
 method unloadChunk(int x, int y)
 ```
 ### <sub>method</sub> save
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:153:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:163:2
 ```aspl
 method save(string path)
 ```
 ### <sub>method</sub> fromFile
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:159:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/LazyChunkedCanvas.aspl:169:2
 ```aspl
 method fromFile(string file, string directory) returns LazyChunkedCanvas
 ```
@@ -367,33 +387,43 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:
 ```aspl
 method drawRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
-### <sub>method</sub> fillRectangle
+### <sub>method</sub> drawRoundedRectangle
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:63:2
+```aspl
+method drawRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
+### <sub>method</sub> fillRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:68:2
 ```aspl
 method fillRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
+### <sub>method</sub> fillRoundedRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:73:2
+```aspl
+method fillRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
 ### <sub>method</sub> drawCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:68:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:78:2
 ```aspl
 method drawCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> fillCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:73:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:83:2
 ```aspl
 method fillCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawText
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:78:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:88:2
 ```aspl
 method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:83:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:93:2
 ```aspl
 method replaceColor(Color from, Color to, bool blend = true)
 ```
 ### <sub>method</sub> replaceColorIgnoreAlpha
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:89:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:99:2
 
 > replaceColorIgnoreAlpha works like replaceColor, but checks only the R, G and B components and leaves the alpha value unchanged
 
@@ -401,52 +431,52 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:
 method replaceColorIgnoreAlpha(Color from, Color to)
 ```
 ### <sub>method</sub> blur
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:94:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:104:2
 ```aspl
 method blur(int radius)
 ```
 ### <sub>method</sub> resize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:99:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:109:2
 ```aspl
 method resize(int width, int height)
 ```
 ### <sub>method</sub> resizeScale
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:106:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:116:2
 ```aspl
 method resizeScale(float scale)
 ```
 ### <sub>method</sub> extendTo
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:113:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:123:2
 ```aspl
 method extendTo(int width, int height)
 ```
 ### <sub>method</sub> getSubImage
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:120:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:130:2
 ```aspl
 method getSubImage(int x, int y, int width, int height) returns RegularCanvas
 ```
 ### <sub>method</sub> copy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:125:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:135:2
 ```aspl
 method copy() returns PrimitiveChunkedCanvas
 ```
 ### <sub>method</sub> save
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:130:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:140:2
 ```aspl
 method save(string path)
 ```
 ### <sub>method</sub> convertToLazy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:135:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:145:2
 ```aspl
 method convertToLazy(string file, string directory)
 ```
 ### <sub>method</sub> fromFile
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:141:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:151:2
 ```aspl
 method fromFile(string file) returns PrimitiveChunkedCanvas
 ```
 ### <sub>method</sub> fromFileData
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:148:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/PrimitiveChunkedCanvas.aspl:158:2
 ```aspl
 method fromFileData(list<byte> bytes) returns PrimitiveChunkedCanvas
 ```
@@ -496,33 +526,43 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:57:2
 ```aspl
 method drawRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
-### <sub>method</sub> fillRectangle
+### <sub>method</sub> drawRoundedRectangle
 Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:62:2
+```aspl
+method drawRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
+### <sub>method</sub> fillRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:67:2
 ```aspl
 method fillRectangle(Rectangle rectangle, Color color, bool blend = true)
 ```
+### <sub>method</sub> fillRoundedRectangle
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:72:2
+```aspl
+method fillRoundedRectangle(Rectangle rectangle, int cornerRadius, Color color, bool blend = true)
+```
 ### <sub>method</sub> drawCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:67:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:77:2
 ```aspl
 method drawCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> fillCircle
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:72:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:82:2
 ```aspl
 method fillCircle(Ellipse circle, Color color, bool blend = true)
 ```
 ### <sub>method</sub> drawText
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:77:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:87:2
 ```aspl
 method drawText(string text, int x, int y, Font font, Color color, HorizontalAlignment horizontalAlignment = HorizontalAlignment.Left, VerticalAlignment verticalAlignment = VerticalAlignment.Bottom, HorizontalTextFitting horizontalFitting = HorizontalTextFitting.Full, VerticalTextFitting verticalFitting = VerticalTextFitting.Full, bool blend = true)
 ```
 ### <sub>method</sub> replaceColor
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:82:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:92:2
 ```aspl
 method replaceColor(Color from, Color to, bool blend = true)
 ```
 ### <sub>method</sub> replaceColorIgnoreAlpha
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:88:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:98:2
 
 > replaceColorIgnoreAlpha works like replaceColor, but checks only the R, G and B components and leaves the alpha value unchanged
 
@@ -530,52 +570,52 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:88:2
 method replaceColorIgnoreAlpha(Color from, Color to)
 ```
 ### <sub>method</sub> blur
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:93:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:103:2
 ```aspl
 method blur(int radius)
 ```
 ### <sub>method</sub> resize
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:98:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:108:2
 ```aspl
 method resize(int width, int height)
 ```
 ### <sub>method</sub> resizeScale
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:108:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:118:2
 ```aspl
 method resizeScale(float scale)
 ```
 ### <sub>method</sub> extendTo
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:118:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:128:2
 ```aspl
 method extendTo(int width, int height)
 ```
 ### <sub>method</sub> getSubImage
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:128:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:138:2
 ```aspl
 method getSubImage(int x, int y, int width, int height) returns RegularCanvas
 ```
 ### <sub>method</sub> copy
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:133:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:143:2
 ```aspl
 method copy() returns RegularCanvas
 ```
 ### <sub>method</sub> save
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:138:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:148:2
 ```aspl
 method save(string path)
 ```
 ### <sub>method</sub> fromFile
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:144:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:154:2
 ```aspl
 method fromFile(string file) returns RegularCanvas
 ```
 ### <sub>method</sub> fromFileData
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:151:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:161:2
 ```aspl
 method fromFileData(list<byte> bytes) returns RegularCanvas
 ```
 ### <sub>method</sub> fromData
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:158:2
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:168:2
 ```aspl
 method fromData(list<byte> bytes, int width, int height, int channels) returns RegularCanvas
 ```
@@ -765,13 +805,13 @@ Source: /home/runner/work/aspl/aspl/stdlib/graphics/VerticalTextFitting.aspl:2:1
 ```
 
 ## <sub>function</sub> graphics.get_image_width_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:166:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:176:1
 ```aspl
 function get_image_width_from_file(string file) returns int
 ```
 
 ## <sub>function</sub> graphics.get_image_height_from_file
-Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:171:1
+Source: /home/runner/work/aspl/aspl/stdlib/graphics/RegularCanvas.aspl:181:1
 ```aspl
 function get_image_height_from_file(string file) returns int
 ```
