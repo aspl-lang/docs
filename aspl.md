@@ -1304,7 +1304,12 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/LinkLibrar
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/MethodDeclareStatement.aspl:7:1
 
 ## <sub>class</sub> aspl.parser.ast.statements.NopStatement
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/NopStatement.aspl:4:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/NopStatement.aspl:7:1
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/NopStatement.aspl:11:2
+```aspl
+method construct(Location? location)
+```
 
 ## <sub>class</sub> aspl.parser.ast.statements.PropertyDeclareStatement
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/PropertyDeclareStatement.aspl:7:1
@@ -2325,7 +2330,7 @@ function parse() returns ParserResult
 ```
 
 ## <sub>function</sub> aspl.parser.sort
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/main.aspl:105:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/main.aspl:114:1
 ```aspl
 function sort(list<Node> nodes) returns list<Node>
 ```
