@@ -538,6 +538,11 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/expressions/Expressio
 ```aspl
 method getConstantValue() returns any
 ```
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/Node.aspl:12:2
+```aspl
+method construct(Location? location)
+```
 
 ## <sub>class</sub> aspl.parser.ast.expressions.FunctionCallExpression
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/expressions/FunctionCallExpression.aspl:6:1
@@ -1162,6 +1167,11 @@ method getConstantValue() returns any
 
 ## <sub>class</sub> aspl.parser.ast.literals.Literal
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/literals/Literal.aspl:5:1
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/Node.aspl:12:2
+```aspl
+method construct(Location? location)
+```
 
 ## <sub>class</sub> aspl.parser.ast.literals.LongLiteral
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/literals/LongLiteral.aspl:5:1
@@ -1327,6 +1337,11 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/ReturnStat
 
 ## <sub>class</sub> aspl.parser.ast.statements.Statement
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/Statement.aspl:6:1
+### <sub>method</sub> construct
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/Node.aspl:12:2
+```aspl
+method construct(Location? location)
+```
 
 ## <sub>class</sub> aspl.parser.ast.statements.ThrowStatement
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/ast/statements/ThrowStatement.aspl:6:1
