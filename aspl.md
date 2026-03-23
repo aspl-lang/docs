@@ -2351,37 +2351,37 @@ function sort(list<Node> nodes) returns list<Node>
 ```
 
 ## <sub>function</sub> aspl.parser.utils.notice
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:6:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:4:1
 ```aspl
 function notice(string message, Location? location = null)
 ```
 
 ## <sub>function</sub> aspl.parser.utils.warning
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:15:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:13:1
 ```aspl
 function warning(string message, Location? location = null)
 ```
 
 ## <sub>function</sub> aspl.parser.utils.fatal_error
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:24:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:22:1
 ```aspl
 function fatal_error(string message, Location? location = null)
 ```
 
 ## <sub>function</sub> aspl.parser.utils.syntax_error
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:35:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:33:1
 ```aspl
 function syntax_error(string message, Location? location = null)
 ```
 
 ## <sub>function</sub> aspl.parser.utils.generic_error
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:46:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:44:1
 ```aspl
 function generic_error(string message, Location? location = null)
 ```
 
 ## <sub>function</sub> aspl.parser.utils.type_error
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:56:1
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/errors.aspl:54:1
 ```aspl
 function type_error(string message, Location? location = null)
 ```
