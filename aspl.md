@@ -335,17 +335,17 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:530:2
 method parseToken(Token token, TokenList tokens, bool standalone = false, PrecedenceLevel precedenceLevel = PrecedenceLevel.None, Expression? previousExpression = null, Types? expectedTypes = null) returns Node
 ```
 ### <sub>method</sub> peekTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2814:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2824:2
 ```aspl
 method peekTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
 ### <sub>method</sub> parseTypeIdentifier
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2891:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:2901:2
 ```aspl
 method parseTypeIdentifier(TokenList tokens, Token? first = null) returns IdentifierResult
 ```
 ### <sub>method</sub> parseArguments
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3124:2
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Parser.aspl:3134:2
 ```aspl
 method parseArguments(string kind, string identifier, list<Parameter> parameters, TokenList tokens) returns map<string, Expression>
 ```
@@ -2070,68 +2070,78 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:191:5
 ```aspl
 method matches(Types expected, Types got, bool ignoreGenerics = false) returns bool
 ```
-### <sub>method</sub> getGenericTypeIdentifier
+### <sub>method</sub> computeOverlap
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:223:5
+```aspl
+method computeOverlap(Types a, Types b) returns Types
+```
+### <sub>method</sub> mightOverlap
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:248:5
+```aspl
+method mightOverlap(Types a, Types b) returns bool
+```
+### <sub>method</sub> getGenericTypeIdentifier
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:285:5
 ```aspl
 method getGenericTypeIdentifier(string identifier) returns string
 ```
 ### <sub>method</sub> getGenericTypesIdentifiers
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:229:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:291:5
 ```aspl
 method getGenericTypesIdentifiers(string identifier) returns list<string>
 ```
 ### <sub>method</sub> getGenericTypes
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:262:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:324:5
 ```aspl
 method getGenericTypes(string identifier) returns list<Types>
 ```
 ### <sub>method</sub> toString
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:272:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:334:5
 ```aspl
 method toString() returns string
 ```
 ### <sub>method</sub> getDefaultValue
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:277:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:339:5
 ```aspl
 method getDefaultValue(Location location) returns Literal?
 ```
 ### <sub>method</sub> canCast
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:315:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:377:5
 ```aspl
 method canCast(Type target) returns bool
 ```
 ### <sub>method</sub> isPointer
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:358:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:420:5
 ```aspl
 method isPointer() returns bool
 ```
 ### <sub>method</sub> getPointer
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:363:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:425:5
 ```aspl
 method getPointer() returns self
 ```
 ### <sub>method</sub> getReferenced
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:368:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:430:5
 ```aspl
 method getReferenced() returns self
 ```
 ### <sub>method</sub> isPrimitive
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:373:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:435:5
 ```aspl
 method isPrimitive() returns bool
 ```
 ### <sub>method</sub> containsPlaceHolder
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:379:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:441:5
 ```aspl
 method containsPlaceHolder(Type type, string placeholder) returns bool
 ```
 ### <sub>method</sub> replacePlaceHolder
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:401:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:463:5
 ```aspl
 method replacePlaceHolder(Type type, string placeholder, Type replacement) returns Type
 ```
 ### <sub>method</sub> isPublic
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:424:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/utils/Type.aspl:486:5
 ```aspl
 method isPublic(Type type) returns bool
 ```
