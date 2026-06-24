@@ -214,57 +214,57 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:84:5
 property string cCompiler
 ```
 ### <sub>property</sub> useDynamicCTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:108:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:111:5
 ```aspl
 property bool useDynamicCTemplate
 ```
 ### <sub>property</sub> showCCommand
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:112:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:115:5
 ```aspl
 property bool showCCommand
 ```
 ### <sub>property</sub> heapBased
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:116:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:119:5
 ```aspl
 property bool heapBased
 ```
 ### <sub>property</sub> stackSize
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:120:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:123:5
 ```aspl
 property int? stackSize
 ```
 ### <sub>property</sub> useSsl
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:124:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:127:5
 ```aspl
 property bool useSsl
 ```
 ### <sub>property</sub> useD3D11
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:128:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:131:5
 ```aspl
 property bool useD3D11
 ```
 ### <sub>property</sub> enableErrorHandling
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:132:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:135:5
 ```aspl
 property bool enableErrorHandling
 ```
 ### <sub>property</sub> noCachedTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:136:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:139:5
 ```aspl
 property bool noCachedTemplate
 ```
 ### <sub>property</sub> internalTemplateType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:140:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:143:5
 ```aspl
 property string internalTemplateType
 ```
 ### <sub>property</sub> internalDoNotBundle
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:144:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:147:5
 ```aspl
 property bool internalDoNotBundle
 ```
 ### <sub>method</sub> getConditionCompilationSymbols
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:148:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:151:5
 ```aspl
 method getConditionCompilationSymbols() returns list<string>
 ```
