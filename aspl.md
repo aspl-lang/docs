@@ -233,38 +233,43 @@ Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:123:5
 ```aspl
 property int? stackSize
 ```
-### <sub>property</sub> useSsl
+### <sub>property</sub> useAddressSanitizer
 Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:127:5
+```aspl
+property bool useAddressSanitizer
+```
+### <sub>property</sub> useSsl
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:131:5
 ```aspl
 property bool useSsl
 ```
 ### <sub>property</sub> useD3D11
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:131:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:135:5
 ```aspl
 property bool useD3D11
 ```
 ### <sub>property</sub> enableErrorHandling
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:135:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:139:5
 ```aspl
 property bool enableErrorHandling
 ```
 ### <sub>property</sub> noCachedTemplate
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:139:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:143:5
 ```aspl
 property bool noCachedTemplate
 ```
 ### <sub>property</sub> internalTemplateType
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:143:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:147:5
 ```aspl
 property string internalTemplateType
 ```
 ### <sub>property</sub> internalDoNotBundle
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:147:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:151:5
 ```aspl
 property bool internalDoNotBundle
 ```
 ### <sub>method</sub> getConditionCompilationSymbols
-Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:151:5
+Source: /home/runner/work/aspl/aspl/stdlib/aspl/parser/Options.aspl:155:5
 ```aspl
 method getConditionCompilationSymbols() returns list<string>
 ```
